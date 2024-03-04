@@ -63,7 +63,24 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			
+			
+			
+			 <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.8.1</version> <!-- Use the version appropriate for your project -->
+            <configuration>
+                <source>1.8</source> <!-- Use the Java version of your project -->
+                <target>1.8</target> <!-- Use the Java version of your project -->
+                <compilerArgs>
+                    <arg>-parameters</arg>
+                </compilerArgs>
+            </configuration>
+        </plugin>
 		</plugins>
+		
+		
 	</build>
 
 </project>
